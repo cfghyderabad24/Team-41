@@ -12,6 +12,7 @@ function UserNavBar() {
       };
   return (
     <nav>
+        
       <ul> 
         <li><Link className='link' to="/">Home</Link></li>
         <li><Link className='link' onClick={handlelogout}>Logout</Link></li>
@@ -22,6 +23,6 @@ function UserNavBar() {
         </Routes>
     </nav>
   );
-}
+} 
 
 export default UserNavBar;
