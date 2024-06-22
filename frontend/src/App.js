@@ -9,7 +9,6 @@ import Contact from "./pages/contact"
 import NavBar from "./components/NavBar";
 import Register from "./pages/register";
 import UserHome from "./pages/UserHome";
-import Product from "./pages/product";
 import UserNavBar from "./components/UserNavBar"
 
 export default function App() {
@@ -27,18 +26,6 @@ export default function App() {
   return (
     <Router>
       <div className="App">
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/supportUs" element={<SupportUs />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />}/>
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/userhome" element={<UserHome/>} />
-          <Route path="/product" element={<Product/>}/>
-        </Routes>
       {isUserLoggedIn?(
         <UserNavBar  />
       ):(
