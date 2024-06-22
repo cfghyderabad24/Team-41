@@ -8,6 +8,7 @@ import Login from "./pages/login";
 import Contact from "./pages/contact"
 import NavBar from "./components/NavBar";
 import Register from "./pages/register";
+import UserHome from "./pages/UserHome";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />}/>
           <Route path="/contact" element={<Contact />} />
+          <Route path="/userhome" element={<UserHome/>} />
         </Routes>
       </div>
     </Router>
