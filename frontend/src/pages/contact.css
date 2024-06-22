@@ -1,102 +1,162 @@
-*{
-    padding: 0;
+/* contact.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
-    box-sizing: border-box;
-}
-html,body{
-    width: 100%;
-    height: 100%;
-}
-.box1{
-    margin-top: 15vh;
-    width: 100vw;
-
-    text-align: center;
-}
-
-.box1 h1{
-    font-size: 4vw;
-    font-weight: 400;
-}
-.box1 h3{
-    font-size: 1.5vw;
-    font-weight: 400;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:3vh;
-    margin: 10vh 4vw 8vh 4vw;
-    
-}
-
-.uname{
-    display:flex;
-    align-items: center;
-    gap: 1.5vw;
-}
-input[type="text"]{
-    width: 41vw;
-}
-input,textarea{
-    width: 83.5vw;
-    padding: 2vh 1vw;
-}
-input{
-    height: 8vh;
-    padding: 2vh 1vw;
-}
-button{
-    border-radius: 40px;
-    background-color: rgb(110, 168, 204);
-    outline: none;
-    padding: 1.5vh 1vw;
-    border: none;
-    color: #fff;
-    font-weight: 500;
-}
-h4{
-    opacity: 0.4;
-    font-weight: 400;
-}
-.box2{
-    padding: 10vh 3vw;
-    display: flex;
-    align-items: center;
-    gap:5vw;
-}
-.b1{
-    padding-left: 3vw;
-    width: 18.8vw;
-   display: flex;
-   flex-direction: column;
-   gap:3vh;
-    height: 100%;
-}
-.b2{
-    width: 20vw;
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
+    padding: 0;
+  }
   
-    height: 100%;
-}
-.b3{
-    width: 40vw;
-    height: 100%;
-}
-a{
+  .box1 {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #d4cf89;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .box1 h1 {
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  .box1 h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .msgform {
+    background-color: #fff;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .msgform form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .uname {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .uname input {
+    flex: 1;
+  }
+  
+  .msgform input,
+  .msgform textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #43423c;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .msgform input:focus,
+  .msgform textarea:focus {
+    border-color: #967b54;
+  }
+  
+  .msgform textarea {
+    resize: vertical;
+  }
+  
+  .msgform button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #726551, #ff5722);
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .msgform button:hover {
+    background: linear-gradient(90deg, #ff5722, #ff9800);
+    transform: scale(1.05);
+  }
+  
+  .box2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #333;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .box2 .b1,
+  .box2 .b2,
+  .box2 .b3 {
+    flex: 1;
+    margin: 20px;
+    min-width: 250px;
+  }
+  
+  .box2 .b1 img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .socials {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .socials a {
+    color: #ffeb3b;
+    font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .socials a:hover {
+    color: #ff9800;
+    transform: scale(1.2);
+  }
+  
+  .box2 p {
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
+  
+  .box2 a {
+    color: #ffeb3b;
     text-decoration: none;
-
-
-}
-a:link, a:visited, a:hover, a:active {
-    color: black;
-    text-decoration: none;
-}
-.socials{
-    display:flex;
-    align-items: center;
-   gap:1vw;
-}
+    transition: color 0.3s ease;
+  }
+  
+  .box2 a:hover {
+    color: #ff9800;
+  }
+  
+  .b2 h3,
+  .b3 h1 {
+    margin-bottom: 10px;
+  }
+  
+  .b2 h3 {
+    font-size: 1.5em;
+    color: #42866f;
+  }
+  
+  .b3 h1 {
+    font-size: 2em;
+    color: #ffeb3b;
+  }
+  
+  .b3 p {
+    font-size: 0.9em;
+  }
+  

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-function Login() {
+function Login({onUserLogIN}) {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [showOtpInput, setShowOtpInput] = useState(false);
@@ -27,7 +27,13 @@ function Login() {
     try {
       const response = await axios.post(`http://localhost:4000/login/verify/${email}`, { otp: data.otp });
       if (response.status === 200) {
-        navigate('/userhome'); 
+        setTimeout(() => {
+          onUserLogIN();
+          navigate('/userhome');
+          setTimeout(() => {
+            window.location.reload();
+          }, 500);
+        }, 1000);
       }
     } catch (error) {
       console.error('Error verifying OTP:', error);
