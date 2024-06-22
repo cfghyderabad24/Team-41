@@ -1,7 +1,14 @@
-import React from "react";
+import React from 'react';
 
+import Hero from '../components/Hero';
+import Statistics from '../components/Statistics';
 function Home() {
-  return <h2>Home Page</h2>;
+  return (
+    <div>
+      
+      <Hero/>
+      <Statistics/>
+    </div>
+  );
 }
-
 export default Home;
