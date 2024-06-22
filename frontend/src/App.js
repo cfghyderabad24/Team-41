@@ -7,6 +7,7 @@ import SupportUs from "./pages/supportUs";
 import Login from "./pages/login";
 import Contact from "./pages/contact"
 import NavBar from "./components/NavBar";
+import Register from "./pages/register";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/supportUs" element={<SupportUs />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />}/>
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
