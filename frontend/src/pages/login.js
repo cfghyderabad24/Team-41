@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import { compare, compareSync } from 'bcryptjs';
@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Login() {
     let navigate=useNavigate()
+    const [email,setEmail] = useState('');
     let {register,handleSubmit}=useForm();
     function onLoginFormSubmit(userCredentialsObject){
         fetch(`http://localhost:4000/users?username=${userCredentialsObject.username}`,
@@ -39,12 +40,12 @@ function Login() {
       <h1 className='text-info  text-center display-3 '> Login</h1>
       <form action='' className='w-50 mx-auto mt-2 bg-light p-4' onSubmit={handleSubmit(onLoginFormSubmit)}>
       <div className='mb-3'>
-            <label htmlFor='username'  className='form-label'>Username</label>
-        <input type='username' {...register('username')}  id='username' className='form-control mb-4' />
+            <label htmlFor='username'  className='form-label'>Email</label>
+        <input type='email' onChange={(e)=>setEmail(e.target.value)}  id='email' className='form-control mb-4' />
         </div>
         <div className='mb-3'>
-            <label htmlFor='password'  className='form-label'>Password</label>
-        <input type='password' {...register('password')}  id='password' className='form-control mb-4' />
+            <label htmlFor='password'  className='form-label'>OTP</label>
+            <input type='password' {...register('password')}  id='password' className='form-control mb-4' />
         </div>
         <button  type='submit' className='btn btn-success btn-info text-secondary d-block mx-auto fs-5 '>Login</button>
 
@@ -56,3 +57,4 @@ function Login() {
 }
 
 export default Login
+
