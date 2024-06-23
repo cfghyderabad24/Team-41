@@ -1,16 +1,20 @@
-*{
+/* contact.css */
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html,body{
+html, body {
     width: 100%;
     height: 100%;
 }
-.imgcontent{
+.imgcontent {
     width: 100%;
-    display:flex;
- 
+    display: flex;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 .imagea{
     display: flex;
@@ -33,28 +37,24 @@ html,body{
     font-size: 4vw;
     margin-bottom: 4vh;
     font-weight: 300;
-
 }
-.we h2{
+.we h2 {
     font-weight: 400;
     font-size: 3vw;
 }
-.we{
-    
-    margin-top:8vh;
+.we {
+    margin-top: 8vh;
     gap: 3vh;
     width: 50%;
     display: flex;
     flex-direction: column;
     padding-left: 6vw;
 }
-.we p,.we ul{
+.we p, .we ul {
     opacity: 0.9;
 }
-li{
+li {
     display: flex;
-    
-
 }
 .ab3{
     display: flex;
@@ -62,14 +62,15 @@ li{
     margin-top: 5vh;
     text-align: center;
     padding-bottom: 20vh;
-    
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 .ab3 p{
     margin-bottom: 5vh;
     opacity: 0.7;
     font-size: 1.3vw;
     font-weight: 400;
-
 }
 .im3{
     margin-bottom: 5vh;
