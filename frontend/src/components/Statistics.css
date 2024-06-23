@@ -1,5 +1,5 @@
 .statistics {
-    display: flex;
+    display: block;
     justify-content: space-around;
     padding: 50px 20px;
     background: #f4f4f4;
@@ -29,4 +29,31 @@
   .stat p {
     font-size: 20px;
     font-weight: bold;
+  }
+  .donate-image{
+    width: 600px;
+    height: 600px
+  }
+  .donate{
+    padding-left: 50px;
+    width: 460px;
+  }
+  .donate h3{
+    color: cornflowerblue;
+  }
+.who {
+  padding-top: 0px;
+    width: 600px;
+    height: 600px
+    
+  }
+  .whoinfo{
+    width: 460px;
+    padding-left: 50px;
+  }
+  .whoinfo h3{
+     color: cornflowerblue;
+  }
+  .first{
+    display:flow-root;
   }

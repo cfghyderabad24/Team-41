@@ -4,7 +4,7 @@ import './about.css'
 function About() {
   return (
     <>
-      <div className="box1">
+      <div className="ab1">
         <h1>Good Universe integrates</h1>
         <h3>
           Gender Equality, Good Health and Climate-Friendly Communities
@@ -55,13 +55,16 @@ function About() {
           </div>
         </ul>
       </div>
-      <div className="image">
+      <div className="imagea">
         <img src="https://gooduniverse.org/assets/img/gu/about5-2x.png"></img>
       </div>
 
       </div>
-      <div className="box3">
+      <div className="ab3">
+        <div  className="im3">
         <img src="https://gooduniverse.org/assets/img/gu/about6.png"></img>
+        </div>
+        
         <h3>
           We envision a world that comprises <br></br>
            gender equality, sustainable

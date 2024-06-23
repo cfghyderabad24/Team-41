@@ -1,17 +1,16 @@
 import React from 'react';
 import './Footer.css';
-
 const Footer = () => (
   <footer>
     <div className="contact-info">
-      <p>Address: 123 Main Street, Anytown, USA</p>
-      <p>Email: contact@gooduniverse.org</p>
-      <p>Phone: (123) 456-7890</p>
+      <p>Address: Kondapur Main Road, SBI Officers Quarters, Gachibowli, Hyderabad, Telangana 500046, India</p>
+      <p>Email: hello@gooduniverse.org</p>
+      <p>Phone: +91-7995180851</p>
     </div>
     <div className="social-media">
-      <a href="/">Facebook</a>
-      <a href="/">Twitter</a>
-      <a href="/">Instagram</a>
+      <a href="https://www.facebook.com/GoodUniverseNGO/"><p>Facebook</p></a>
+      <a href="https://x.com/i/flow/login?redirect_after_login=%2Fgooduniversengo"><p>Twitter</p></a>
+      <a href="https://www.instagram.com/gooduniversengo?igsh=YnNqb2FkOHRyMG80"><p>Instagram</p></a>
     </div>
   </footer>
 );

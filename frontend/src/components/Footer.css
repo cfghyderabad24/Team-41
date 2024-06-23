@@ -16,3 +16,7 @@ footer {
     text-decoration: none;
     margin-left: 20px;
   }
+  .social-media p{
+    color: white;
+    display: inline;
+  }
