@@ -1,0 +1,43 @@
+.add{
+    padding: 2vh 4vw;
+}
+.key{
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 20vw;
+    margin-bottom: 5vh;
+    text-align: center;
+    
+}
+img{
+    margin:2px;
+    width: 15vw;
+}
+.add{
+    border:1 px solid black;
+    border-radius: 8px;
+    padding:1vh 2vw;
+    background-color: #3c3c3e6c;
+}
+.emt{
+    border:1 px solid black;
+    border-radius: 8px;
+    padding:1vh 2vw;
+    background-color: #3c3c3e6c;
+    
+}
+.box{
+    width: 20vw;
+    height: 35vh;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 2vh;
+}
+.but{
+    padding: 1.5vh 3vw;
+    border-radius: 2vw;
+}
+.del{
+    padding: 1vh 3vw;
+    border-radius: 2vw;
+}
