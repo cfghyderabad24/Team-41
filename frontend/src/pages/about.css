@@ -1,0 +1,99 @@
+/* contact.css */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.imgcontent {
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.imgcontent.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+.image img {
+    height: 40vw;
+}
+
+.ab1 h3 {
+    font-weight: 700;
+    opacity: 0.8;
+    line-height: 30px;
+}
+.ab1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.ab1 h1 {
+    font-size: 4vw;
+    margin-bottom: 4vh;
+    font-weight: 300;
+}
+.we h2 {
+    font-weight: 400;
+    font-size: 3vw;
+}
+.we {
+    margin-top: 8vh;
+    gap: 3vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 6vw;
+}
+.we p, .we ul {
+    opacity: 0.9;
+}
+li {
+    display: flex;
+}
+.ab1 h3{
+    font-weight: 400;
+    line-height: 35px;
+}
+.ab3 {
+    margin-top: 5vh;
+    text-align: center;
+    padding-bottom: 20vh;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.ab3.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+.ab3 p {
+    margin-bottom: 5vh;
+    opacity: 0.7;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+.ab3 img {
+    width: 6vw;
+}
+.ab3 h3 {
+    margin-bottom: 7vh;
+    font-weight: 400;
+    font-size: 3vw;
+    opacity: 0.9;
+}

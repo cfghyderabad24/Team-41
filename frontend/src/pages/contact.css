@@ -1,0 +1,162 @@
+/* contact.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cb1 {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #d4cf89;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cb1 h1 {
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  .cb1 h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .msgform {
+    background-color: #fff;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 20px rgba(43, 164, 225, 0.1);
+    border-radius: 10px;
+  }
+  
+  .msgform form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .uname {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .uname input {
+    flex: 1;
+  }
+  
+  .msgform input,
+  .msgform textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #43423c;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .msgform input:focus,
+  .msgform textarea:focus {
+    border-color: #967b54;
+  }
+  
+  .msgform textarea {
+    resize: vertical;
+  }
+  
+  .msgform button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #4f90a4, #5790e0);
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .msgform button:hover {
+    
+    transform: scale(1.05);
+  }
+  
+  .box2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #333;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .box2 .b1,
+  .box2 .b2,
+  .box2 .b3 {
+    flex: 1;
+    margin: 20px;
+    min-width: 250px;
+  }
+  
+  .box2 .b1 img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .socials {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .socials a {
+    color: #ffeb3b;
+    font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .socials a:hover {
+    color: #ff9800;
+    transform: scale(1.2);
+  }
+  
+  .box2 p {
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
+  
+  .box2 a {
+    color: #ffeb3b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .box2 a:hover {
+    color: #ff9800;
+  }
+  
+  .b2 h3,
+  .b3 h1 {
+    margin-bottom: 10px;
+  }
+  
+  .b2 h3 {
+    font-size: 1.5em;
+    color: #42866f;
+  }
+  
+  .b3 h1 {
+    font-size: 2em;
+    color: #ffeb3b;
+  }
+  
+  .b3 p {
+    font-size: 0.9em;
+  }
+  
