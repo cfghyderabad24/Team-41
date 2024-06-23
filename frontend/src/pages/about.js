@@ -30,7 +30,7 @@ function About() {
 
   return (
     <>
-      <div className="ab1">
+      <div className="box1">
         <h1>Good Universe integrates</h1>
         <h3>
           Gender Equality, Good Health and Climate-Friendly Communities
@@ -61,36 +61,30 @@ function About() {
                 Periodic Awareness Campaigns.
               </li>
 
-            <li>
-              
-              <TiTick />
-              Intensive Training Programs.
-            </li>
-          </div>
-          <div>
-            <li>
-              
-              <TiTick />
-              Stakeholders’Conversation.
-            </li>
-            <li>
-              
-              <TiTick />
-              Capacity Building.
-            </li>
-          </div>
-        </ul>
-      </div>
-      <div className="imagea">
-        <img src="https://gooduniverse.org/assets/img/gu/about5-2x.png"></img>
+              <li>
+                <TiTick />
+                Intensive Training Programs.
+              </li>
+            </div>
+            <div>
+              <li>
+                <TiTick />
+                Stakeholders’Conversation.
+              </li>
+              <li>
+                <TiTick />
+                Capacity Building.
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div className="image">
+          <img src="https://gooduniverse.org/assets/img/gu/about5-2x.png" alt="Good Universe"></img>
+        </div>
       </div>
 
-      </div>
-      <div className="ab3">
-        <div  className="im3">
-        <img src="https://gooduniverse.org/assets/img/gu/about6.png"></img>
-        </div>
-        
+      <div className="box3">
+        <img src="https://gooduniverse.org/assets/img/gu/about6.png" alt="Good Universe"></img>
         <h3>
           We envision a world that comprises <br></br>
            gender equality, sustainable
