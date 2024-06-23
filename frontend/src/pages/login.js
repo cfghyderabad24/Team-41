@@ -22,7 +22,6 @@ function Login({onUserLogIN}) {
       // Handle error (e.g., display an error message)
     }
   }
-
   async function onLoginFormSubmit(data) {
     try {
       const response = await axios.post(`http://localhost:4000/login/verify/${email}`, { otp: data.otp });

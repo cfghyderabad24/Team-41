@@ -10,7 +10,7 @@ function Contact() {
   return (
 <>
 
-<div className="box1">
+<div className="cb1">
   <h1>Get in Touch</h1>
   <h3>Reach out to us.</h3>
   <h3>

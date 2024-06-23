@@ -1,12 +1,14 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+
 function Product() {
   let { state } = useLocation();
   const navigate = useNavigate();
+
   function addToCart(product) {
     navigate("/cart", { state: product });
-   
   }
+
   return (
     <div className="d-flex container css-custom">
       <div className="d-flex w-50">
