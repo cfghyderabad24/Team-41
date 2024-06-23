@@ -1,0 +1,33 @@
+.support-us {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .support-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .support-us p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .donate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: #4CAF50;
+    text-decoration: none;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .donate-button:hover {
+    background: #45a049;
+    color: white;
+  }

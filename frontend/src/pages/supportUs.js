@@ -96,5 +96,4 @@ function Supportus() {
         </div>
     );
 }
-
-export default Supportus;
+export default SupportUs;

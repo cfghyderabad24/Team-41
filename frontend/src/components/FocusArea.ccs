@@ -1,0 +1,20 @@
+.focus-areas {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: #f4f4f4;
+  }
+  
+  .focus-area {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .focus-area h2 {
+    font-size: 24px;
+    color: #4CAF50;
+  }
+  
+  .focus-area p {
+    font-size: 16px;
+  }
