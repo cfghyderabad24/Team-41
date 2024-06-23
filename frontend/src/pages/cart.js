@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-// import Counter from "../counter/Counter";
+import Counter from "./Counter";
 function Cart() {
   let navigate=useNavigate();
-  const [price,setPrice] = useState(1);
+  const [price,setPrice] = useState(0);
   function travel(){
     navigate("/");
   }
@@ -19,7 +19,11 @@ function Cart() {
     };
 }, []);
 const paymentHandler = async (event) => {
-  const amount = price*100;
+  const num=document.getElementById('ct').textContent;
+
+
+  console.log(num);
+  const amount = price*100*(Number(num));
   const currency = 'INR';
   const receiptId = '1235823';
   const  email  = "bhavanibakka1903@gmail.com";
@@ -172,6 +176,7 @@ const paymentHandler = async (event) => {
           />
           <label
             className="form-check-label labels"
+
             htmlFor="flexRadioDefault1"
           >
             Ascending
@@ -263,7 +268,7 @@ const paymentHandler = async (event) => {
             <img src={obj.image} style={{ width: "150px" }} alt="" />
             <div className="">
             <p className="fw-4 fs-5 ms-4">{obj.title}</p>
-            {/* <Counter /> */}
+            <Counter />
             <i className="bi fs-5 bi-currency-rupee fw-3 ms-4"></i>
             <p className="d-inline fs-5 fw-3">{obj.price}</p>
             <div className="mt-3 ms-4">
@@ -281,3 +286,8 @@ const paymentHandler = async (event) => {
   );
 }
 export default Cart;
+
+
+ 
+
+

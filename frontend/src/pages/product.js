@@ -5,6 +5,7 @@ function Product() {
   const navigate = useNavigate();
   function addToCart(product) {
     navigate("/cart", { state: product });
+    navigate("/product", { state: product });
   }
   return (
     <div className="d-flex container css-custom">
