@@ -7,10 +7,10 @@ function About() {
   useEffect(() => {
     const handleScroll = () => {
       const imgContent = document.querySelector('.imgcontent');
-      const box3 = document.querySelector('.box3');
+      const ab3 = document.querySelector('.ab3');
       
       const imgContentPosition = imgContent.getBoundingClientRect().top;
-      const box3Position = box3.getBoundingClientRect().top;
+      const box3Position = ab3.getBoundingClientRect().top;
       
       const screenPosition = window.innerHeight / 1.3;
       
@@ -18,7 +18,7 @@ function About() {
         imgContent.classList.add('show');
       }
       if (box3Position < screenPosition) {
-        box3.classList.add('show');
+        ab3.classList.add('show');
       }
     };
     
@@ -30,7 +30,7 @@ function About() {
 
   return (
     <>
-      <div className="box1">
+      <div className="ab1">
         <h1>Good Universe integrates</h1>
         <h3>
           Gender Equality, Good Health and Climate-Friendly Communities
@@ -83,7 +83,7 @@ function About() {
         </div>
       </div>
 
-      <div className="box3">
+      <div className="ab3">
         <img src="https://gooduniverse.org/assets/img/gu/about6.png" alt="Good Universe"></img>
         <h3>
           We envision a world that comprises <br></br>

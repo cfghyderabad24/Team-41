@@ -7,19 +7,19 @@ body {
     padding: 0;
   }
   
-  .box1 {
+  .cb1 {
     text-align: center;
     padding: 50px 20px;
     background-color: #d4cf89;
     border-bottom: 1px solid #ddd;
   }
   
-  .box1 h1 {
+  .cb1 h1 {
     font-size: 2.5em;
     color: #333;
   }
   
-  .box1 h3 {
+  .cb1 h3 {
     font-size: 1.2em;
     color: #555;
     margin-top: 10px;
@@ -30,7 +30,7 @@ body {
     padding: 40px 20px;
     max-width: 600px;
     margin: 40px auto;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(43, 164, 225, 0.1);
     border-radius: 10px;
   }
   
@@ -75,7 +75,7 @@ body {
     padding: 15px;
     border: none;
     border-radius: 8px;
-    background: linear-gradient(90deg, #726551, #ff5722);
+    background: linear-gradient(90deg, #4f90a4, #5790e0);
     color: #fff;
     font-size: 1.2em;
     cursor: pointer;
@@ -83,7 +83,7 @@ body {
   }
   
   .msgform button:hover {
-    background: linear-gradient(90deg, #ff5722, #ff9800);
+    
     transform: scale(1.05);
   }
   
